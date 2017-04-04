@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- <div class="control"> -->
+        <button type="button" class="btn btn-default btn-lg" id="preButton" css="display: none">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous
+        </button>
+        <p class="pageNum"> </p>
+        <button type="button" class="btn btn-default btn-lg" id="nexButton">Next
+           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
+      <!-- </div> -->
+
+        <h1 class="title">Bay Area Bike Share Stations</h1>
+        <p class="main">The Bay Area has initiated its Bike Share program since 2013</p>
+        <p class="note">Click each station dot to learn about its location and size.</p>
+
+
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Legend -->
+    <div class="legend" style="display: none;">
+      <table style = "border:4px; border-color:white">
+        <tr>
+          <td class="legCol" style ="background-color:#046c9f"></td>
+          <td>Under 20 Docks</td>
+        </tr>
+        <tr>
+          <td class="legCol" style ="background-color:#f1928c"></td>
+          <td>More than 20 Docks</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/BayArea Bike Data.js"></script>
+    <script src="js/basicApplication.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
